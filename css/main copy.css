@@ -1,0 +1,175 @@
+root {
+	display: block;
+}
+body {
+	background-color: #ff8500;
+	background-repeat: repeat-x;
+	background-position: top;
+}
+*,
+*:before,
+*:after {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* TEST BELOW add credit */
+
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1000;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-image: url(/sprites/addcredit_bg.jpg);
+	background-size: cover;
+	/* <------ */
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#credits {
+	font-family: 'adonaisregular';
+	font-size: 3.5vh;
+	color: #ffde00;
+	text-align: center;
+	position: relative;
+	top: 2vh;
+	left: 32vh;
+}
+
+#close {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: url(/sprites/but_exit.png) no-repeat;
+    position: relative;
+	top: 2vh;
+	right: 32vh;
+}
+
+#connection {
+	font-family: 'adonaisregular';
+	font-size: 2.5vh;
+	text-align: center;
+	color: #ffde00;
+	vertical-align: text-bottom;
+	margin-top: 5vh;
+	width: 83vh;
+	height: 3vh;
+}
+
+#account {
+	font-family: 'Verdana';
+	font-size: 2vh;
+	text-align: center;
+	color: #ffde00;
+	vertical-align: text-bottom;
+	margin-top: 2vh;
+	width: 83vh;
+	height: 3vh;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+	font-family: 'Verdana';
+	color: #ffde00;
+}
+#send_dash {
+	font-family: 'adonaisregular';
+	font-size: 3.5vh;
+	text-align: center;
+	color: #ffde00;
+	vertical-align: text-bottom;
+	margin-top: 1vh;
+	width: 83vh;
+	height: 3vh;
+}
+.wrapper {
+	text-align: center;
+}
+.holderDiv {
+	/*
+	position: absolute;
+	top: 13.5vh;
+	left: 26%;
+*/
+	width: 83vh;
+	/* 900px */
+	height: 61vh;
+	/* 565px */
+	display: inline-block;
+	margin-top: 20vh;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #172c3d;
+	border-radius: 5px;
+}
+input,
+input:before,
+input:after {
+	-webkit-user-select: initial;
+	-khtml-user-select: initial;
+	-moz-user-select: initial;
+	-ms-user-select: initial;
+	user-select: initial;
+}
+::selection {
+	background: transparent;
+	color: inherit;
+}
+::-moz-selection {
+	background: transparent;
+	color: inherit;
+}
+#canvas {
+	position: fixed;
+}
+canvas {
+	image-rendering: optimizeSpeed;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	-ms-interpolation-mode: nearest-neighbor;
+	-ms-touch-action: none;
+}
+.ani_hack {
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	/* mobile webkit */
+}
+
+/***************FONTS*******************/
+
+@font-face {
+	font-family: 'walibi0615bold';
+	src: url('walibi-holland-webfont.eot');
+	src: url('walibi-holland-webfont.eot?#iefix') format('embedded-opentype'), url('walibi-holland-webfont.woff2') format('woff2'), url('walibi-holland-webfont.woff') format('woff'), url('walibi-holland-webfont.ttf') format('truetype'), url('walibi-holland-webfont.svg#walibi0615bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'adonaisregular';
+	src: url('adonais-webfont.eot');
+	src: url('adonais-webfont.eot?#iefix') format('embedded-opentype'), url('adonais-webfont.woff2') format('woff2'), url('adonais-webfont.woff') format('woff'), url('adonais-webfont.ttf') format('truetype'), url('adonais-webfont.svg#adonaisregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
